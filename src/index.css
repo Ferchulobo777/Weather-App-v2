@@ -288,6 +288,162 @@ h1.box {
 .dark-mode .year {
   color: var(--COLOR_TEXT_DARK);
 }
+
+@media screen and (min-width:360px) and (max-width: 560px) {
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  h1.box {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7rem;
+    margin: .2rem;
+    text-align: center;
+    width: 1rem;
+  }
+  .search {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 6rem;
+    justify-content: center;
+  }
+  .input-search {
+    border: 1px solid;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 6px 8px;
+    width: 6rem;
+  }
+
+  .btn-search {
+    background-color: var(--COLOR_BACKGROUND_DARK);
+    color: var(--COLOR_TEXT_DARK);
+    width: 3rem;
+    font-size: .7rem;
+    &:hover {
+      background-color: #c2c2c2;
+    }
+  }
+  .btn-toggle {
+  align-items: center; /* Centrar verticalmente */
+  background-color: var(--COLOR_BACKGROUND_DARK); /* Color de fondo claro */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Redondeado */
+  color: var(--COLOR_TEXT_DARK);
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  display: flex; /* Para centrar el ícono */
+  height: 40px; /* Alto del botón */
+  justify-content: center; /* Centrar horizontalmente */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+  width: 40px; /* Ancho del botón */
+}
+.modal {
+  align-items: center; /* Centrar el contenido del modal */
+  background-color: var(--COLOR_BACKGROUND_DARK);
+  border-radius: 10px; /* Bordes redondeados para el modal */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el modal */
+  display: flex;
+  flex-direction: column;
+  height: 26rem;
+  justify-content: space-around;
+  margin-top: 3rem; /* Espacio entre el título y el modal */
+  max-height: 20rem;
+  max-width: 40rem;
+  padding: 20px; /* Espaciado interno del modal */
+  position: relative;
+  width: 24rem;
+}
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+.img-thermometer {
+  height: 6rem;
+  left: 6rem;
+  position: absolute;
+  top: 1.5rem;
+  width: 6rem;
+}
+
+.img-icon {
+  height: 8rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  width: 8rem;
+}
+.weather-temp {
+  align-items: center;
+  color: var(--COLOR_TEXT_DARK);
+  display: flex;
+  flex-direction: row;
+  font-size: 6rem;
+  justify-content: space-between;
+  left: 1rem;
+  position: absolute;
+  top: 0;
+}
+.temp-max {
+  font-size: .8rem;
+}
+
+.temp-min {
+  font-size: .8rem;
+}
+
+.temp-feels-like {
+  font-size: .8rem;
+}
+
+.humidity {
+  font-size: .8rem;
+}
+.locality {
+  bottom: 2rem;
+  color: var(--COLOR_TEXT_DARK);
+  font-size: 1rem;
+  position: absolute;
+  right: .8rem;
+}
+
+.country {
+  bottom: 0;
+  color: var(--COLOR_TEXT_DARK);
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: absolute;
+  right: .8rem;
+}
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .rights {
+    color: var(--COLOR_TEXT_LIGHT);
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .year {
+    color: var(--COLOR_TEXT_LIGHT);
+    margin-top: -0.5rem;
+  }
+}
+
+
 @media screen and (max-width: 560px) {
   .header {
     align-items: center;
