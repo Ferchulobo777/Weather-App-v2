@@ -1,8 +1,8 @@
 <h1 align="center">🌤 Weather App 🌤</h1>
 
 <p align="center">
-  <img src="https://your-cloud-image-link.com/weather-app-main.png" alt="Weather App" width="400"/>
-  <img src="https://your-cloud-image-link.com/weather-app-screenshot.png" alt="Weather App Screenshot" width="360"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1730750437/Weather-app-v2/zaf3xdabdgarj7sob2u1.png" alt="Weather App" width="400"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1730750437/Weather-app-v2/k9spzaljjeari9vba4ag.png" alt="Weather App Screenshot" width="360"/>
 </p>
 
 ---
