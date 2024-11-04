@@ -67,10 +67,12 @@
    Ejemplo de Uso
    1 - Inicia la aplicación en modo de desarrollo:
    
-   pnpm start
+   pnpm dev
 
    2 - Ingresa el nombre de una ciudad en la barra de búsqueda y consulta el clima actual.
+   
    3 - Alterna entre Celsius y Fahrenheit haciendo clic en el botón de unidades.
+   
    4 - Cambia entre el modo claro y oscuro usando el botón correspondiente.
 
 
