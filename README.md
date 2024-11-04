@@ -51,11 +51,11 @@
    git clone https://github.com/Ferchulobo777/Weather-App-v2
   
 2. Navega al directorio del proyecto:
-
+   ```bash
    cd Weather-App
 
 3. Instala las dependencias utilizando pnpm:
-
+   ```bash
    pnpm install
 
 4. Configura tu API Key de OpenWeather:
@@ -67,9 +67,9 @@
    Ejemplo de Uso
    
    1 - Inicia la aplicación en modo de desarrollo:
-   
+   ```bash
    pnpm dev
-
+   ```
    2 - Ingresa el nombre de una ciudad en la barra de búsqueda y consulta el clima actual.
    
    3 - Alterna entre Celsius y Fahrenheit haciendo clic en el botón de unidades.
