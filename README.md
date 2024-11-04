@@ -36,10 +36,10 @@
 
 - **React**: Biblioteca para construir interfaces de usuario.
 - **Axios**: Para realizar solicitudes HTTP a la API de OpenWeather.
+- **JavaScript**: Lógica y manipulación de datos.
 - **Bootstrap**: Para diseño responsivo y estilizado.
 - **CSS3**: Estilos personalizados para el diseño visual.
 - **pnpm**: Gestor de paquetes para instalar dependencias del proyecto.
-- **JavaScript**: Lógica y manipulación de datos.
 - **API de OpenWeather**: Para obtener datos meteorológicos en tiempo real.
 
 ---
