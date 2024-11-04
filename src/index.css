@@ -1,0 +1,363 @@
+:root {
+  /* Modo default o claro */
+  --COLOR_TEXT_LIGHT: #000000;
+  --COLOR_BACKGROUND_LIGHT: #f0f0f0f0;
+
+  /* Modo oscuro */
+  --COLOR_TEXT_DARK: #f9f9f9;
+  --COLOR_BACKGROUND_DARK: #000000;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--COLOR_BACKGROUND_LIGHT);
+  color: var(--COLOR_TEXT_LIGHT);
+  min-height: 100vh;
+}
+
+/* Estilos para el modo oscuro */
+.dark-mode {
+  background-color: var(--COLOR_BACKGROUND_DARK);
+  color: var(--COLOR_TEXT_DARK);
+}
+
+.container-fluid {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 12rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+h1.box {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.btn-toggle {
+  align-items: center; /* Centrar verticalmente */
+  background-color: var(--COLOR_BACKGROUND_DARK); /* Color de fondo claro */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Redondeado */
+  color: var(--COLOR_TEXT_DARK);
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  display: flex; /* Para centrar el ícono */
+  height: 40px; /* Alto del botón */
+  justify-content: center; /* Centrar horizontalmente */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+  width: 40px; /* Ancho del botón */
+}
+
+.dark-mode .btn-toggle {
+  background-color: var(--COLOR_BACKGROUND_LIGHT); /* Color de fondo oscuro */
+  color: var(--COLOR_TEXT_LIGHT); /* Color del ícono en modo oscuro */
+}
+
+.btn-toggle:hover {
+  background-color: #c2c2c2;
+  opacity: 0.8;
+}
+
+.search {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-around;
+  min-width: 4rem;
+  width: 30rem;
+}
+.input-search {
+  border: 1px solid;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-size: 1.2rem;
+  max-width: 30rem;
+  min-width: 4rem;
+  padding: 6px 8px;
+  width: 26rem;
+}
+
+.btn-search {
+  background-color: var(--COLOR_BACKGROUND_DARK);
+  color: var(--COLOR_TEXT_DARK);
+  margin-left: 0rem;
+  min-width: 1rem;
+  width: 6rem;
+  &:hover {
+    background-color: #c2c2c2;
+  }
+}
+
+.dark-mode .btn-search {
+  background-color: var(--COLOR_BACKGROUND_LIGHT);
+  color: var(--COLOR_TEXT_LIGHT);
+  &:hover {
+    background-color: #c2c2c2;
+  }
+}
+
+.modal {
+  align-items: center; /* Centrar el contenido del modal */
+  background-color: var(--COLOR_BACKGROUND_DARK);
+  border-radius: 10px; /* Bordes redondeados para el modal */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el modal */
+  display: flex;
+  flex-direction: column;
+  height: 26rem;
+  justify-content: space-around;
+  margin-top: 3rem; /* Espacio entre el título y el modal */
+  max-height: 20rem;
+  max-width: 40rem;
+  padding: 20px; /* Espaciado interno del modal */
+  position: relative;
+  width: 34rem;
+}
+
+.dark-mode .modal {
+  background-color: var(--COLOR_BACKGROUND_LIGHT);
+}
+
+.title-modal {
+  color: #000000;
+}
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+}
+.img-thermometer {
+  height: 8rem;
+  left: 9.2rem;
+  position: absolute;
+  top: 2rem;
+  width: 8rem;
+}
+
+.img-icon {
+  height: 10rem;
+  position: absolute;
+  right: 1rem;
+  top: 0rem;
+  width: 10rem;
+}
+.weather-temp {
+  align-items: center;
+  color: var(--COLOR_TEXT_DARK);
+  display: flex;
+  flex-direction: row;
+  font-size: 8rem;
+  justify-content: space-between;
+  left: 3rem;
+  position: absolute;
+  top: 0;
+}
+.dark-mode .weather-temp {
+  color: var(--COLOR_TEXT_LIGHT);
+}
+
+.weather-info-header {
+  display: flex;
+  flex-direction: row;
+}
+.weather-temp-data {
+  align-items: start;
+  bottom: 0;
+  color: var(--COLOR_TEXT_DARK);
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  position: absolute;
+}
+
+.dark-mode .weather-temp-data {
+  color: var(--COLOR_TEXT_LIGHT);
+}
+
+.temp-max {
+  color: #b11706;
+}
+
+.temp-min {
+  color: #13a897;
+}
+
+.temp-feels-like {
+  color: #f98553;
+}
+
+.humidity {
+  color: #02659f;
+}
+
+.btn-unit-toggle {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: -1.2rem;
+  top: -1rem;
+}
+
+.btn-unit-toggle:active,
+.btn-unit-toggle:first {
+  border: none; /* Quita el borde que puede aparecer */
+  box-shadow: none; /* Elimina el efecto de sombra */
+  outline: none; /* Quita el borde al hacer clic */
+}
+
+.locality {
+  bottom: 3.4rem;
+  color: var(--COLOR_TEXT_DARK);
+  font-size: 1.4rem;
+  position: absolute;
+  right: 1.8rem;
+}
+
+.dark-mode .locality {
+  color: var(--COLOR_TEXT_LIGHT);
+}
+.country {
+  bottom: 0;
+  color: var(--COLOR_TEXT_DARK);
+  font-size: 2.6rem;
+  font-weight: 600;
+  position: absolute;
+  right: 1.8rem;
+}
+
+.dark-mode .country {
+  color: var(--COLOR_TEXT_LIGHT);
+}
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3.2rem;
+}
+.name {
+  color: var(--COLOR_TEXT_LIGHT);
+  text-align: center;
+  width: 100%;
+}
+
+.dark-mode .name {
+  color: var(--COLOR_TEXT_DARK);
+}
+
+.rights {
+  color: var(--COLOR_TEXT_LIGHT);
+  margin-top: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.dark-mode .rights {
+  color: var(--COLOR_TEXT_DARK);
+}
+
+.year {
+  color: var(--COLOR_TEXT_LIGHT);
+  margin-top: -0.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.dark-mode .year {
+  color: var(--COLOR_TEXT_DARK);
+}
+@media screen and (max-width: 560px) {
+  .header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  h1.box {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    width: 1.2rem;
+  }
+  .search {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 22rem;
+    justify-content: center;
+  }
+  .input-search {
+    border: 1px solid;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 6px 8px;
+    width: 14rem;
+  }
+
+  .btn-search {
+    background-color: var(--COLOR_BACKGROUND_DARK);
+    color: var(--COLOR_TEXT_DARK);
+    width: 5rem;
+    font-size: 1rem;
+    &:hover {
+      background-color: #c2c2c2;
+    }
+  }
+  .btn-toggle {
+  align-items: center; /* Centrar verticalmente */
+  background-color: var(--COLOR_BACKGROUND_DARK); /* Color de fondo claro */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Redondeado */
+  color: var(--COLOR_TEXT_DARK);
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  display: flex; /* Para centrar el ícono */
+  height: 40px; /* Alto del botón */
+  justify-content: center; /* Centrar horizontalmente */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+  width: 40px; /* Ancho del botón */
+}
+  .name {
+    font-size: 1rem;
+  }
+
+  .rights {
+    color: var(--COLOR_TEXT_LIGHT);
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .year {
+    color: var(--COLOR_TEXT_LIGHT);
+    margin-top: -0.5rem;
+  }
+}
