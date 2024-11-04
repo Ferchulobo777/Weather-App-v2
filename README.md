@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1730750437/Weather-app-v2/zaf3xdabdgarj7sob2u1.png" alt="Weather App" width="400"/>
-  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1730750437/Weather-app-v2/k9spzaljjeari9vba4ag.png" alt="Weather App Screenshot" width="360"/>
+  <img src="https://res.cloudinary.com/dpvzlh1zv/image/upload/v1730750437/Weather-app-v2/k9spzaljjeari9vba4ag.png" alt="Weather App Screenshot" width="400"/>
 </p>
 
 ---
