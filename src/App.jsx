@@ -165,8 +165,8 @@ function App() {
                 width={"100px"}
                 src={
                   isCelsius
-                    ? "../public/icons/fahrenheit.svg"
-                    : "../public/icons/celsius.svg"
+                    ? "/icons/fahrenheit.svg"
+                    : "/icons/celsius.svg"
                 }
                 alt=""
               />
