@@ -65,6 +65,7 @@
    VITE_WEATHER_API_KEY=YOUR_API_KEY_HERE
 
    Ejemplo de Uso
+   
    1 - Inicia la aplicación en modo de desarrollo:
    
    pnpm dev
